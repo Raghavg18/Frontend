@@ -12,7 +12,7 @@ const useSendMessage = () => {
     if (SelectedConversation && SelectedConversation._id) {
       try {
         const response = await axios.post(
-          `/api/message/send/${SelectedConversation._id}`,
+          `https://backend-chatapp-dkmp.onrender.com/message/send/${SelectedConversation._id}`,
           { messages: message },
           { withCredentials: true }
         );

@@ -22,7 +22,7 @@ export default function Login() {
     };
 
     axios
-      .post('/api/user/login', userinfo)
+      .post('https://backend-chatapp-dkmp.onrender.com/user/login', userinfo)
       .then((response) => {
         if (response.status === 200 && response.data) {
           localStorage.setItem('massenger', JSON.stringify(response.data));

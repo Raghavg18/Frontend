@@ -12,7 +12,7 @@ function useGetMessage() {
 
       if (SelectedConversation && SelectedConversation._id) {
         try {
-          const response = await axios.get(`/api/message/get/${SelectedConversation._id}`,{withCredentials: true});
+          const response = await axios.get(`https://backend-chatapp-dkmp.onrender.com/message/get/${SelectedConversation._id}`,{withCredentials: true});
           setMessages(response.data.message)
           console.log("Set messages:", response.data.message)
         } catch (error) {

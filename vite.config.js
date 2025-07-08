@@ -8,11 +8,11 @@ export default defineConfig({
     tailwindcss()],
   server:{
     port: 4001,
-    proxy: {
-      '/api': {
-        target: 'https://backend-chatapp-dkmp.onrender.com',
-        changeOrigin: true,
-      },
-    },
+    // proxy: {
+    //   '/api': {
+    //     target: 'https://backend-chatapp-dkmp.onrender.com',
+    //     changeOrigin: true,
+    //   },
+    // },
   }
 })

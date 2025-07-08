@@ -28,7 +28,7 @@ export default function Signup() {
         confirmPassword: data.confirmPassword
     }
     await axios
-    .post('/api/user/signup', userinfo)
+    .post('https://backend-chatapp-dkmp.onrender.com/user/signup', userinfo)
     .then((response)=>{
         console.log(response.data)
         if(response.data){
