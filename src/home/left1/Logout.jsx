@@ -9,7 +9,7 @@ const Logout = () => {
   const handleLogout = () => {
     setloading(true)
     try {
-      const res = axios.post('https://backend-chatapp-dkmp.onrender.com/user/logout')
+      const res = axios.post('https://backend-chatapp-dkmp.onrender.com/api/user/logout')
       localStorage.removeItem('massenger')
       Cookies.remove('jwt')
       setloading(false)
