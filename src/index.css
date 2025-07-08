@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+.flex-raghav::-webkit-scrollbar {
+  display: none;
+}
