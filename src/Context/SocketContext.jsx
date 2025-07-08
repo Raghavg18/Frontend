@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import {useAuth} from "./Authprovider.jsx"
 import io from "socket.io-client"
-import { set } from "react-hook-form";
+// import { set } from "react-hook-form";
 
 const socketContext = createContext();
 export const useSocketContext = () => {
