@@ -12,7 +12,7 @@ const userGetallUser = () => {
       try {
         const token = cookie.get('jwt')
         const response = await axios.get("https://backend-chatapp-dkmp.onrender.com/api/user/getUserProfile", {
-          credentials: 'include',
+          withCredentials: true,
           headers: {
             Authorization: `Bearer ${token}`,
           }
