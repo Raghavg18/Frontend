@@ -15,7 +15,7 @@ export const SocketProvider = ({children})=>{
 
     useEffect(()=>{
         if(authuser) {
-            const socket = io("http://localhost:5002/",{
+            const socket = io("https://backend-chatapp-dkmp.onrender.com",{
                 query: {userId: authuser.user.id},
             })
             setsocket(socket)

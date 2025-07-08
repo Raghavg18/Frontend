@@ -10,7 +10,7 @@ export default defineConfig({
     port: 4001,
     proxy: {
       '/api': {
-        target: 'http://localhost:5002',
+        target: 'https://backend-chatapp-dkmp.onrender.com',
         changeOrigin: true,
       },
     },
