@@ -11,8 +11,9 @@ const userGetallUser = () => {
       setLoading(true)
       try {
         const token = cookie.get('jwt')
-        const response = await axios.get("https://backend-chatapp-dkmp.onrender.com/api/user/getUserProfile", {
-          withCredentials: true,
+        console.log(token)
+        const response = await axios.get("http://localhost:5002/api/user/getUserProfile", {
+          withCredentials: true ,
           headers: {
             Authorization: `Bearer ${token}`,
           }
